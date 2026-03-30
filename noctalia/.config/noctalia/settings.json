@@ -8,7 +8,9 @@
         "customLaunchPrefixEnabled": false,
         "density": "comfortable",
         "enableClipPreview": true,
+        "enableClipboardChips": true,
         "enableClipboardHistory": false,
+        "enableClipboardSmartIcons": true,
         "enableSessionSearch": false,
         "enableSettingsSearch": false,
         "enableWindowsSearch": false,
@@ -18,8 +20,7 @@
         "pinnedApps": [
             "brave-browser",
             "code",
-            "md.obsidian.Obsidian",
-            "cursor"
+            "md.obsidian.Obsidian"
         ],
         "position": "follow_bar",
         "screenshotAnnotationTool": "",
@@ -27,14 +28,14 @@
         "showIconBackground": false,
         "sortByMostUsed": true,
         "terminalCommand": "alacritty -e",
-        "useApp2Unit": false,
         "viewMode": "list"
     },
     "audio": {
-        "cavaFrameRate": 30,
         "mprisBlacklist": [
         ],
         "preferredPlayer": "",
+        "spectrumFrameRate": 30,
+        "spectrumMirrored": true,
         "visualizerType": "linear",
         "volumeFeedback": false,
         "volumeFeedbackSoundFile": "",
@@ -51,7 +52,7 @@
         "contentPadding": 2,
         "density": "default",
         "displayMode": "always_visible",
-        "floating": false,
+        "enableExclusionZoneInset": true,
         "fontScale": 1,
         "frameRadius": 12,
         "frameThickness": 8,
@@ -66,7 +67,7 @@
         "mouseWheelAction": "none",
         "mouseWheelWrap": true,
         "outerCorners": true,
-        "position": "left",
+        "position": "top",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
         "rightClickCommand": "",
@@ -87,6 +88,7 @@
                     "enableScrollWheel": true,
                     "focusedColor": "primary",
                     "followFocusedScreen": false,
+                    "fontWeight": "bold",
                     "groupedBorderOpacity": 1,
                     "hideUnoccupied": false,
                     "iconScale": 0.8,
@@ -95,6 +97,7 @@
                     "occupiedColor": "secondary",
                     "pillSize": 0.6,
                     "showApplications": false,
+                    "showApplicationsHover": false,
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
@@ -212,6 +215,15 @@
                     "textColor": "none"
                 },
                 {
+                    "defaultSettings": {
+                        "enableTodoIntegration": false,
+                        "notecardsEnabled": true,
+                        "pincardsEnabled": true,
+                        "showCloseButton": true
+                    },
+                    "id": "plugin:clipper"
+                },
+                {
                     "colorizeDistroLogo": false,
                     "colorizeSystemIcon": "none",
                     "customIconPath": "",
@@ -252,8 +264,8 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "GruvboxAlt",
-        "schedulingMode": "location",
+        "predefinedScheme": "Cherry Blossom",
+        "schedulingMode": "off",
         "useWallpaperColors": false
     },
     "controlCenter": {
@@ -318,39 +330,153 @@
     },
     "desktopWidgets": {
         "enabled": true,
-        "gridSnap": true,
+        "gridSnap": false,
+        "gridSnapScale": false,
         "monitorWidgets": [
             {
                 "name": "eDP-1",
                 "widgets": [
                     {
-                        "clockColor": "none",
-                        "clockStyle": "digital",
-                        "format": "HH:mm\\nd MMMM yyyy",
-                        "id": "Clock",
-                        "scale": 1.2198291862970052,
-                        "showBackground": true,
-                        "useCustomFont": false,
-                        "x": 1700,
-                        "y": 40
+                        "defaultSettings": {
+                        },
+                        "id": "plugin:custom-sticker",
+                        "image": "/home/emanas/.dotfiles/widget-images/.config/widget-images/nayuta-denji.png",
+                        "mirror": false,
+                        "opacity": 1,
+                        "roundedCorners": true,
+                        "scale": 2.3243152471191175,
+                        "showBackground": false,
+                        "verticalMirror": false,
+                        "x": 6,
+                        "y": 167
                     },
                     {
-                        "hideMode": "idle",
+                        "defaultSettings": {
+                        },
+                        "id": "plugin:custom-sticker",
+                        "image": "/home/emanas/.dotfiles/widget-images/.config/widget-images/reze-beach.jpg",
+                        "mirror": true,
+                        "opacity": 1,
+                        "roundedCorners": true,
+                        "scale": 1.5136283710321972,
+                        "showBackground": false,
+                        "verticalMirror": false,
+                        "x": 685,
+                        "y": 678
+                    },
+                    {
+                        "defaultSettings": {
+                        },
+                        "id": "plugin:custom-sticker",
+                        "image": "/home/emanas/.dotfiles/widget-images/.config/widget-images/kyomoto.jpg",
+                        "mirror": false,
+                        "opacity": 1,
+                        "roundedCorners": true,
+                        "scale": 1.9193861294552588,
+                        "showBackground": false,
+                        "verticalMirror": false,
+                        "x": 679,
+                        "y": 883
+                    },
+                    {
+                        "defaultSettings": {
+                        },
+                        "id": "plugin:custom-sticker",
+                        "image": "/home/emanas/.dotfiles/widget-images/.config/widget-images/asirpa-manga-cover.jpg",
+                        "mirror": false,
+                        "opacity": 1,
+                        "roundedCorners": true,
+                        "scale": 4.674322025979691,
+                        "showBackground": true,
+                        "verticalMirror": false,
+                        "x": 17,
+                        "y": 409
+                    },
+                    {
+                        "defaultSettings": {
+                        },
+                        "id": "plugin:custom-sticker",
+                        "image": "/home/emanas/.dotfiles/widget-images/.config/widget-images/yoshida-face.jpg",
+                        "mirror": false,
+                        "opacity": 1,
+                        "roundedCorners": true,
+                        "showBackground": false,
+                        "verticalMirror": false,
+                        "x": 413,
+                        "y": 972
+                    },
+                    {
+                        "defaultSettings": {
+                        },
+                        "id": "plugin:custom-sticker",
+                        "image": "/home/emanas/.dotfiles/widget-images/.config/widget-images/asa-face.jpg",
+                        "mirror": false,
+                        "opacity": 1,
+                        "roundedCorners": true,
+                        "scale": 1.4109321596083073,
+                        "showBackground": true,
+                        "verticalMirror": false,
+                        "x": 533,
+                        "y": 870
+                    },
+                    {
+                        "defaultSettings": {
+                        },
+                        "id": "plugin:custom-sticker",
+                        "image": "/home/emanas/.dotfiles/widget-images/.config/widget-images/golden-kamuy-funny.jpg",
+                        "mirror": false,
+                        "opacity": 1,
+                        "roundedCorners": true,
+                        "scale": 1.8861852563698593,
+                        "showBackground": false,
+                        "verticalMirror": false,
+                        "x": 17,
+                        "y": 844
+                    },
+                    {
+                        "clockColor": "none",
+                        "clockStyle": "digital",
+                        "customFont": "",
+                        "format": "HH:mm\\nd MMMM yyyy",
+                        "id": "Clock",
+                        "roundedCorners": true,
+                        "scale": 1.2734330362978918,
+                        "showBackground": true,
+                        "useCustomFont": false,
+                        "x": 1714,
+                        "y": 42
+                    },
+                    {
+                        "defaultSettings": {
+                        },
+                        "id": "plugin:custom-sticker",
+                        "image": "/home/emanas/.dotfiles/widget-images/.config/widget-images/goodbye-eri.jpg",
+                        "mirror": false,
+                        "opacity": 1,
+                        "roundedCorners": true,
+                        "scale": 3.7034128555410994,
+                        "showBackground": false,
+                        "verticalMirror": false,
+                        "x": 1450,
+                        "y": 534
+                    },
+                    {
+                        "hideMode": "hidden",
                         "id": "MediaPlayer",
                         "roundedCorners": true,
-                        "scale": 1,
+                        "scale": 1.10637905924257,
                         "showAlbumArt": true,
                         "showBackground": true,
                         "showButtons": true,
                         "showVisualizer": true,
                         "visualizerType": "linear",
-                        "x": 1480,
-                        "y": 960
+                        "x": 50,
+                        "y": 972
                     }
                 ]
             }
         ],
-        "overviewEnabled": false
+        "overviewEnabled": true
     },
     "dock": {
         "animationSpeed": 1,
@@ -369,8 +495,10 @@
         "indicatorColor": "primary",
         "indicatorOpacity": 0.6,
         "indicatorThickness": 3,
+        "launcherIcon": "",
         "launcherIconColor": "none",
         "launcherPosition": "end",
+        "launcherUseDistroLogo": false,
         "monitors": [
         ],
         "onlySameOutput": true,
@@ -389,12 +517,13 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/home/emanas/.dotfiles/pfps/.config/pfps/leorio.jpeg",
+        "avatarImage": "/home/emanas/.dotfiles/pfps/.config/pfps/osaka-vasco.jpg",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
         "compactLockScreen": false,
         "dimmerOpacity": 0.2,
+        "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": false,
         "enableShadows": true,
@@ -447,6 +576,7 @@
         "telemetryEnabled": false
     },
     "hooks": {
+        "colorGeneration": "",
         "darkModeChange": "",
         "enabled": false,
         "performanceModeDisabled": "",
@@ -494,8 +624,7 @@
         "bluetoothRssiPollingEnabled": false,
         "disableDiscoverability": false,
         "networkPanelView": "wifi",
-        "wifiDetailsViewMode": "grid",
-        "wifiEnabled": true
+        "wifiDetailsViewMode": "grid"
     },
     "nightLight": {
         "autoSchedule": false,
@@ -504,7 +633,11 @@
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "nightTemp": "3206"
+        "nightTemp": "1722"
+    },
+    "noctaliaPerformance": {
+        "disableDesktopWidgets": true,
+        "disableWallpaper": true
     },
     "notifications": {
         "backgroundOpacity": 1,
@@ -553,7 +686,8 @@
         "overlayLayer": true
     },
     "plugins": {
-        "autoUpdate": false
+        "autoUpdate": true,
+        "notifyUpdates": true
     },
     "sessionMenu": {
         "countdownDuration": 10000,
@@ -622,7 +756,7 @@
         "showHeader": true,
         "showKeybinds": true
     },
-    "settingsVersion": 55,
+    "settingsVersion": 59,
     "systemMonitor": {
         "batteryCriticalThreshold": 5,
         "batteryWarningThreshold": 20,
@@ -651,6 +785,18 @@
             {
                 "enabled": true,
                 "id": "alacritty"
+            },
+            {
+                "enabled": true,
+                "id": "niri"
+            },
+            {
+                "enabled": true,
+                "id": "btop"
+            },
+            {
+                "enabled": true,
+                "id": "kitty"
             }
         ],
         "enableUserTheming": false
@@ -663,13 +809,15 @@
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.93,
         "panelsAttachedToBar": true,
+        "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "attached",
         "settingsPanelSideBarCardStyle": true,
-        "tooltipsEnabled": true
+        "tooltipsEnabled": true,
+        "translucentWidgets": false
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/emanas/Pictures/Wallpapers",
+        "directory": "/home/emanas/.dotfiles/backgrounds/.config/backgrounds",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
@@ -678,6 +826,11 @@
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
         "monitorDirectories": [
+            {
+                "directory": "/home/emanas/.dotfiles/backgrounds/.config/backgrounds",
+                "name": "eDP-1",
+                "wallpaper": ""
+            }
         ],
         "overviewBlur": 0.4,
         "overviewEnabled": false,
@@ -691,10 +844,13 @@
         "sortOrder": "name_desc",
         "transitionDuration": 1500,
         "transitionEdgeSmoothness": 0.05,
-        "transitionType": "wipe",
+        "transitionType": [
+            "wipe"
+        ],
+        "useOriginalImages": false,
         "useSolidColor": false,
         "useWallhaven": false,
-        "viewMode": "browse",
+        "viewMode": "single",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
